@@ -1,5 +1,7 @@
 import React from 'react';
 import logo from "../../img/logo.png"
+import {Link} from "react-router-dom"
+
 
 export const Header = () => {
   return <div>
@@ -11,10 +13,10 @@ export const Header = () => {
         </a>
         <ul>
           <li>
-            <a href="#">Inicio</a>
+            <Link to="/">Inicio</Link>
           </li>
           <li>
-            <a href="#">Productos</a>
+            <Link to="/products">Productos</Link>
           </li>
         </ul>
         <div className="cart">

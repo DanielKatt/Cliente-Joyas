@@ -97,3 +97,98 @@ header .cart span{
   font-size: 1.5rem;
   background-color: #4A306D;
 }
+
+/*---------Products-------*/
+
+.Tittle{
+  font-size: 2.4rem;
+  padding: 10rem 0 0 0;
+  color: #000;
+}
+
+.Products{
+  padding: 5rem 0rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+  gap: 3rem 2rem;
+  box-sizing: border-box;
+}
+
+.Product{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 3px 8px 4px rgba(0,0,0,0.71);
+  border: 6px solid transparent;
+  border-radius: 5px;
+}
+
+.Product:hover{
+  border: 6px solid #cbbad4;
+}
+
+.Product__img img{
+  width: 310px;
+}
+
+.product__footer{
+  padding: 1rem;
+}
+.product__footer h1{
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: monospace;
+}
+
+.product__footer p{
+  font-weight: 700;
+  color: #4A306D;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.product__footer .price{
+  font-size: 2rem;
+  color: #2e1e44;
+}
+
+.Product .button{
+  width: 100%;
+  height: 45px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem 2rem;
+}
+
+.button .btn{
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.button button{
+  background-color: #D3BCCC;
+  max-width: 250px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+.button div {
+  background-color: #c58fb5;
+  display: grid;
+  align-items: center;
+  margin-left: -2rem;
+  border-radius: 5px;
+}
+
+.button div a{
+  text-align: center;
+  font-weight: 500;
+}
+
+.button div a:hover{
+  color: #E8D7F1;
+}
