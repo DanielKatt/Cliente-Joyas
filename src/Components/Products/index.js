@@ -1,8 +1,12 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import imagenJoya from "../../img/Joya.jpg"
-
+import { Context } from "../../Context/DataPr"
 
 export const ProductsList = () => {
+    //Vamos a consumir los datos del context
+  const value = useContext(Context)
+  const [Products] = value.Products 
+
   return(
     <>
     <h1 className='Tittle'>PRODUCTOS</h1> 

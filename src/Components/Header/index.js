@@ -6,11 +6,11 @@ import {Link} from "react-router-dom"
 export const Header = () => {
   return <div>
       <header>
-        <a href="#">
+        <Link to="/">
           <div className='logo'>
               <img src={logo} alt="Logo" width="90px" />
           </div>
-        </a>
+        </Link>
         <ul>
           <li>
             <Link to="/">Inicio</Link>

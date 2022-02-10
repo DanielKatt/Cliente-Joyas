@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes ,Route } from 'react-router-dom';
-import {Beggin} from "./beggin"
+import {Beggin} from "./beggin/index"
 import {ProductsList} from "./Products/index"
 
 export const Pages = () => {
@@ -8,7 +8,7 @@ export const Pages = () => {
     <section>
       <Routes>
         <Route path='/' element={ <Beggin/>} />
-        <Route path='/products' element={ <ProductsList/> } />
+        <Route path='Products' element={ <ProductsList/> } />
       </Routes>
     </section>
   )
