@@ -1,9 +1,11 @@
 import React from "react"
 import {Header} from "./Components/Header/index"
-import {Beggin} from "./Components/beggin/index"
 import { BrowserRouter as Router } from "react-router-dom"
 import {Pages} from "./Components/Pages"
 import { DataPr } from "./Context/DataPr"
+import "boxicons";
+import { Cart } from "./Components/Cart/Cart"
+ 
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
       <Router>
         <Header/>
         <Pages/>
+        <Cart />
       </Router>
     </div>
     </DataPr>

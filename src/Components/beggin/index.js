@@ -9,7 +9,7 @@ export const Beggin = () => {
           <div className="row">
             <div className="col-1">
             <h1>Joyas Hilmar</h1>
-            <h1>Productos de Joyeria</h1>
+            <h1>Productos de Joyeria, Si estas interesado en algun producto <br/> Escribenos a: 3154122512</h1>
             <p>Joyas a tu alcance</p>
             <Link to="/Products">
               <button type='button' className='buttonn'>Empezar</button>

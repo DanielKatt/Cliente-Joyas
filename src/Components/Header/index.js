@@ -1,9 +1,18 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import logo from "../../img/logo.png"
 import {Link} from "react-router-dom"
-
+import { Context  } from "../../Context/DataPr"
 
 export const Header = () => {
+
+  const value = useContext(Context)
+  const[menu, setMenu] = value.menu
+  const[Cart] = value.Cart
+
+  const toogleMenu = () =>{
+    setMenu(!menu)
+  }
+
   return <div>
       <header>
         <Link to="/">
@@ -19,9 +28,9 @@ export const Header = () => {
             <Link to="/products">Productos</Link>
           </li>
         </ul>
-        <div className="cart">
+        <div className="cart" on onClick={toogleMenu}>
         <box-icon type='solid' name='cart-alt'></box-icon>
-          <span className='item__total'>0</span>
+          <span className='item__total'>{Cart.length} </span>
         </div>
       </header>
   </div>;
